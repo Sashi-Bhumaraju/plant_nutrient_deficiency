@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+.page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-image {
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  object-fit: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page-input {
+  width: 50%;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.file-upload-container {
+  background-color: #f2f2f2;
+  /* font-family: Arial, sans-serif; */
+  max-width: calc( 50% - 40px);
+  width: calc( 50% - 40px);
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  height: calc(100% - 40px);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+
+.file-upload-heading {
+  /* background-color: red; */
+
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 300px;
+  /* align-self: center; */
+  height: 300px;
+}
+
+.file-upload-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.file-upload-button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file-upload-button:hover {
+  background-color: #3e8e41;
+}
+
+
+
+.result {
+  font-weight: bold;
+  font-size: 20px;
 }
