@@ -27,11 +27,11 @@ function PageInput () {
     const n = selectedFile.name;
     console.log(n.toLowerCase().split('.')[0]);
    
-   if("phosphorus" === n.toLowerCase().split('.')[0]) {
+   if("phosphorus" === n.toLowerCase().split('_')[0]) {
      setName("Phosphorus");
-   } else  if("nitrogen" === n.toLowerCase().split('.')[0] ) {
+   } else  if("nitrogen" === n.toLowerCase().split('_')[0] ) {
     setName("Nitrogen");
-  } else  if("potassium" === n.toLowerCase().split('.')[0]) {
+  } else  if("potassium" === n.toLowerCase().split('_')[0]) {
     setName("Potassium");
   } else {
     setName("Potassium");
