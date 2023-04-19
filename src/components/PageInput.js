@@ -46,7 +46,7 @@ function PageInput () {
   return (
     <div className="file-upload-container">
     { page? 
-     <> <h1 className="file-upload-heading">"Machine learning , plant nutrient deficiency  in leaf by using convolution  neural network technique".</h1>
+     <> <h1 className="file-upload-heading">"Plant nutrient deficiency  in leaf by using convolution  neural network technique".</h1>
       <form onSubmit={handleFormSubmit}>
         <label htmlFor="cssFile" className="file-upload-label">Select plant Image to know nutrient deficiency  :</label>
         <input type="file" id="cssFile" name="cssFile" accept="image/png, image/gif, image/jpeg" onChange={handleFileInputChange} />
